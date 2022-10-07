@@ -1,7 +1,15 @@
 #include <iostream>
 #include <string>
 using namespace std;
+// class fighter
+class fighter {
+public:
+    int strength;
 
+
+
+};
+//mian menu
 int main() {
 
     int num;
@@ -12,7 +20,7 @@ int main() {
 
     switch (num) {
     case 1:
-        cout << "\n" << "You chose 1" << "\n";
+        cout << "\n" << "1:fighter" << "\n";
         break;
     case 2:
         break;
