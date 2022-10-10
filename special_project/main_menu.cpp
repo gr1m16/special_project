@@ -1,35 +1,40 @@
 #include <iostream>
 #include <string>
+#include "fighter.h" 
 using namespace std;
-// class fighter
-class fighter {
+//class
+class Fighter {
 public:
     int strength;
-    int intelegence;
+    int health; 
+
    
+    Fighter() {
+        health = 10;
+        strength = 10;
 
 
 
+    }
+ 
+    void show_stats() {
 
+        cout << "health" << health << endl;
+        cout << "strength" << strength << endl;
+    }
 };
 //mian menu
-int main() {
-    fighter name;
-    name.strength = 10;
-    name.intelegence = 10;
-    cout << name.strength <<endl ;
-    cout <<  name.intelegence;
-    return 0;
-}
-   /* int num;
-    cout << "1:new character "  << endl;
+int main(){
+    int num;
+    cout << "1:new fighter "  << endl;
     cout << "2:exit " << endl;
     cin >> num;
 
     
     switch (num) {
     case 1:
-        cout << "\n" << "1:fighter" << "\n";
+        fighter.name;
+        name.show_stats;
         break;
     case 2:
         break;
@@ -40,4 +45,3 @@ int main() {
     system("pause");
     return 0;
 }
-*/
