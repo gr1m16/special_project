@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-/*
+
 class Fighter {
 public:
     int strength;
@@ -24,4 +24,3 @@ public:
         cout << "strength" <<strength <<endl;
     }
 };
-*/
