@@ -6,12 +6,19 @@ using namespace std;
 class Fighter {
 public:
     int strength;
-    int health; //wrong spelling
-
+    int dexterity;
+    int intelligence;
+    int health; 
+    
     // constructor
     Fighter() {
-        health = 10;
         strength = 10;
+        dexterity = 8;
+        intelligence = 5;
+        health = 10 + strength;
+
+        
+
 
 
 
@@ -22,5 +29,10 @@ public:
 
         cout << "health" << health << endl;
         cout << "strength" <<strength <<endl;
+    }
+    void healthloss() {
+        /* health - damage = current health
+        * if current health= 0 then die
+        */
     }
 };
