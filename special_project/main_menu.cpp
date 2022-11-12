@@ -7,7 +7,11 @@ using namespace std;
 int main(){
     int num;
     int num2;
-    
+    Fighter test = Fighter();
+    test.show_stats();
+    test.healthloss(3);
+    test.show_stats();
+   /*
     cout << "1:create character "  << endl;
     cin >> num;
     Fighter name;
@@ -29,7 +33,7 @@ int main(){
     default:
         exit(0);
     }
-
+    */
     system("pause");
     return 0;
 }

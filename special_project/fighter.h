@@ -9,6 +9,8 @@ public:
     int dexterity;
     int intelligence;
     int health; 
+    int chealth;
+    int damage;
     
     // constructor
     Fighter() {
@@ -16,10 +18,8 @@ public:
         dexterity = 8;
         intelligence = 5;
         health = 10 + strength;
-
-        
-
-
+        chealth = health;
+        damage = 0;
 
 
     }
@@ -27,12 +27,12 @@ public:
     // void show_stats()
     void show_stats() {
 
-        cout << "health" << health << endl;
-        cout << "strength" <<strength <<endl;
+        cout << "health " << chealth << endl;
+        cout << "strength" <<strength << endl;
+        cout << "intelligence " << intelligence << endl;
+        cout << "dexterity " << dexterity << endl;
     }
-    void healthloss() {
-        /* health - damage = current health
-        * if current health= 0 then die
-        */
-    }
+    void healthloss(int damage) {
+        chealth = chealth - damage;
+    };
 };
