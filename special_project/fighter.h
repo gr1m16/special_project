@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 class Fighter {
@@ -13,6 +14,9 @@ public:
     int damage;
     int exp;
     int expdrop;
+    vector <string> inventory;
+
+
     // constructor
     Fighter() {
         strength = 10;
@@ -23,7 +27,7 @@ public:
         damage = 0;
         exp = 0;
         
-
+       inventory = { "sword" };
     }
     //methods
     // void show_stats()
@@ -34,6 +38,8 @@ public:
         cout << "intelligence " << intelligence << endl;
         cout << "dexterity " << dexterity << endl;
         cout << "exp " << exp << endl;
+        showinv();
+
     }
     void healthloss(int damage) {
         chealth = chealth - damage;
@@ -44,6 +50,16 @@ public:
 
 
     
+    }
+    void inv_add(string item) {
+        inventory.push_back(item);
 
+    };
+    void showinv() {
+        cout << "inventory:" << endl;
+        for (int i = 0; i < inventory.size(); i++) {
+            cout << inventory[i] << endl;
+
+        };
     }
 };
