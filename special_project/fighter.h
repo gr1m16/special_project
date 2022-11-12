@@ -11,7 +11,8 @@ public:
     int health; 
     int chealth;
     int damage;
-    
+    int exp;
+    int expdrop;
     // constructor
     Fighter() {
         strength = 10;
@@ -20,7 +21,8 @@ public:
         health = 10 + strength;
         chealth = health;
         damage = 0;
-
+        exp = 0;
+        
 
     }
     //methods
@@ -31,8 +33,17 @@ public:
         cout << "strength" <<strength << endl;
         cout << "intelligence " << intelligence << endl;
         cout << "dexterity " << dexterity << endl;
+        cout << "exp " << exp << endl;
     }
     void healthloss(int damage) {
         chealth = chealth - damage;
     };
+    void exp_gain(int expdrop) {
+   
+        exp = exp + expdrop;
+
+
+    
+
+    }
 };
