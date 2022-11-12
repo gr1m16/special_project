@@ -3,7 +3,7 @@ main_menu.ccp:
 has the basic menu that loads upon launching the program currently only displays the fighter class, however i will be adding more classes in the near future 
 
 fighter.h 
-has the first class containing basic rpg stats(str,dex,int,health), currently working on adding a health loss system and a exp/lvl gaining system
+has the first class containing basic rpg stats(str,dex,int,health),added health loss system and an exp system. the lvling system will be inspired off the dark souls systems.
 
 next steps:
 - add an inventory 
