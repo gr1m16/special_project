@@ -47,13 +47,9 @@ public:
     void exp_gain(int expdrop) {
    
         exp = exp + expdrop;
-
-
-    
     }
     void inv_add(string item) {
         inventory.push_back(item);
-
     };
     void showinv() {
         cout << "inventory:" << endl;
@@ -62,4 +58,9 @@ public:
 
         };
     }
+    void inv_delete() {
+        inventory.remove[i];
+        
+    };
 };
+
