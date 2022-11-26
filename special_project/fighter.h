@@ -57,10 +57,10 @@ public:
             cout << inventory[i] << endl;
 
         };
-    }
+    }/*
     void inv_delete() {
         inventory.remove[i];
         
-    };
+    }; */
 };
 
