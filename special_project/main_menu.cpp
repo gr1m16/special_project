@@ -48,7 +48,6 @@ int main() {
                      name.showinv();
                      cin >> num4;
                      cin >> num5;
-                    
                  }
                  
                  switch (num4) {
@@ -58,7 +57,6 @@ int main() {
                  };
                  };
                  };
-
              }
          }
          }

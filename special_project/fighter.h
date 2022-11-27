@@ -54,12 +54,12 @@ public:
     void showinv() {
         cout << "inventory:" << endl;
         for (int i = 0; i < inventory.size(); i++) {
-            cout << inventory[i] << endl;
+            cout << i +1 <<". " << inventory[i] << endl;
 
         };
     }
     void inv_delete(int i) {
-        cout << "deleted" << endl;
+        
     }; 
 };
 
