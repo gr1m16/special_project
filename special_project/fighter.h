@@ -27,7 +27,7 @@ public:
         damage = 0;
         exp = 0;
         
-       inventory = { "sword" };
+       inventory = { "sword"   };
     }
     //methods
     // void show_stats()
@@ -57,10 +57,9 @@ public:
             cout << inventory[i] << endl;
 
         };
-    }/*
-    void inv_delete() {
-        inventory.remove[i];
-        
-    }; */
+    }
+    void inv_delete(int i) {
+        cout << "deleted" << endl;
+    }; 
 };
 
