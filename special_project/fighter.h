@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <fstream>
 using namespace std;
 
 class Fighter {
@@ -15,6 +16,7 @@ public:
     int exp;
     int expdrop;
     vector <string> inventory;
+    
 
 
     // constructor
@@ -26,9 +28,10 @@ public:
         chealth = health;
         damage = 0;
         exp = 0;
-        
-       inventory = { "sword"   };
-    }
+
+        inventory = { "sword" };
+        ofstream file ("character.txt");
+    };
     //methods
     // void show_stats()
     void show_stats() {
@@ -59,7 +62,16 @@ public:
         };
     }
     void inv_delete(int i) {
+
         
     }; 
+    void save() {
+        ofstream file("character.txt");
+        file << "hello world";
+       
+       
+       
+    };
+
 };
 

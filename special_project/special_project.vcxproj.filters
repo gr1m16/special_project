@@ -23,9 +23,6 @@
     <ClInclude Include="fighter.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="combat.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="inventory.h">
       <Filter>Source Files</Filter>
     </ClInclude>

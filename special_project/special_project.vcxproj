@@ -130,7 +130,6 @@
     <ClCompile Include="main_menu.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="combat.h" />
     <ClInclude Include="fighter.h" />
     <ClInclude Include="inventory.h" />
   </ItemGroup>

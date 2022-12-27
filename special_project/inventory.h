@@ -2,7 +2,7 @@
 #include <string>
 #include "fighter.h" 
 using namespace std; 
-
+/*
 
 func main_menu() {
 	print user's 'options (create character...)
@@ -27,3 +27,4 @@ func create_char_menu() {
 			new_warrior.show_stats()
 			edit_menu()
 }
+*/
