@@ -1,3 +1,7 @@
+your fighter
+
+
+
 health 20
 strength10
 intelligence 5

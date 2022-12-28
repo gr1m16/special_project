@@ -9,25 +9,17 @@ int main() {
     int num;
     int num2;
     int num3;
-    
-
-
-    /*
+    /* this is my test brick
      Fighter test = Fighter();
      test.show_stats();
      test.healthloss(-3);
      test.exp_gain(100);
-       */
-
-
-       // test.show_stats();
-
+      test.show_stats();
+     */
 
     cout << "1:create character " << endl;
     cin >> num;
     Fighter name;
-
-
     switch (num) {
     case 1: {
         cout << "choose class" << endl;
@@ -58,6 +50,5 @@ int main() {
     default:
         exit(0);
     };
-
     return 0;
 };

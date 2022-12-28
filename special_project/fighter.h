@@ -67,12 +67,16 @@ public:
     }; 
     void save() {
         ofstream file("character.txt");
+        file << "your fighter" << endl;
+        file << endl;
+        file << endl;
+        file << endl;
         file << "health " << chealth << endl;
         file << "strength" << strength << endl;
         file << "intelligence " << intelligence << endl;
         file << "dexterity " << dexterity << endl;
         file << "exp " << exp << endl;
-        
+        showinv();
        
        
        
