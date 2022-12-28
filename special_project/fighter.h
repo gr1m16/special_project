@@ -67,7 +67,12 @@ public:
     }; 
     void save() {
         ofstream file("character.txt");
-        file << "hello world";
+        file << "health " << chealth << endl;
+        file << "strength" << strength << endl;
+        file << "intelligence " << intelligence << endl;
+        file << "dexterity " << dexterity << endl;
+        file << "exp " << exp << endl;
+        
        
        
        
