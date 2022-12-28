@@ -1,4 +1,4 @@
-special project (school 2022-2023
+special project (school 2022-2023)
 
 special project MVP(minimal viable project) complete
 -features:
