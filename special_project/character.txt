@@ -1,9 +1,11 @@
 your fighter
 
-
-
 health 20
 strength10
 intelligence 5
 dexterity 8
 exp 0
+
+inventory:
+1. sword
+2. tarp

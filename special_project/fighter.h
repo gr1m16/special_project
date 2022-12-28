@@ -4,7 +4,6 @@
 #include <vector>
 #include <fstream>
 using namespace std;
-
 class Fighter {
 public:
     int strength;
@@ -16,9 +15,6 @@ public:
     int exp;
     int expdrop;
     vector <string> inventory;
-    
-
-
     // constructor
     Fighter() {
         strength = 10;
@@ -35,14 +31,12 @@ public:
     //methods
     // void show_stats()
     void show_stats() {
-
         cout << "health " << chealth << endl;
         cout << "strength" <<strength << endl;
         cout << "intelligence " << intelligence << endl;
         cout << "dexterity " << dexterity << endl;
         cout << "exp " << exp << endl;
         showinv();
-
     }
     void healthloss(int damage) {
         chealth = chealth - damage;
@@ -58,28 +52,24 @@ public:
         cout << "inventory:" << endl;
         for (int i = 0; i < inventory.size(); i++) {
             cout << i +1 <<". " << inventory[i] << endl;
-
         };
     }
-    void inv_delete(int i) {
-
-        
+    void inv_delete(int i) {  
     }; 
     void save() {
         ofstream file("character.txt");
         file << "your fighter" << endl;
-        file << endl;
-        file << endl;
         file << endl;
         file << "health " << chealth << endl;
         file << "strength" << strength << endl;
         file << "intelligence " << intelligence << endl;
         file << "dexterity " << dexterity << endl;
         file << "exp " << exp << endl;
-        showinv();
-       
-       
-       
+        file << endl;
+        file << "inventory:" << endl;
+        for (int i = 0; i < inventory.size(); i++) {
+            file << i + 1 << ". " << inventory[i] << endl;
+        };
     };
 
 };
