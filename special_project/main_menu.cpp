@@ -3,20 +3,11 @@
 #include "fighter.h" 
 #include <vector>
 using namespace std;
-
 //mian menu
 int main() {
     int num;
     int num2;
     int num3;
-    /* this is my test brick
-     Fighter test = Fighter();
-     test.show_stats();
-     test.healthloss(-3);
-     test.exp_gain(100);
-      test.show_stats();
-     */
-
     cout << "1:create character " << endl;
     cin >> num;
     Fighter name;
@@ -30,7 +21,6 @@ int main() {
             Fighter name = Fighter();
             name.show_stats();
             name.inv_add("tarp");
-
             cout << endl;
             cout << endl;
             cout << "1: save file" << endl;
@@ -38,10 +28,7 @@ int main() {
             switch (num3) {
             case 1: {
                 name.save();
-
             }
-
-               
             };
         };
         };

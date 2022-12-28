@@ -15,7 +15,6 @@ public:
     int exp;
     int expdrop;
     vector <string> inventory;
-    // constructor
     Fighter() {
         strength = 10;
         dexterity = 8;
@@ -28,8 +27,6 @@ public:
         inventory = { "sword" };
         ofstream file ("character.txt");
     };
-    //methods
-    // void show_stats()
     void show_stats() {
         cout << "health " << chealth << endl;
         cout << "strength" <<strength << endl;
@@ -73,4 +70,3 @@ public:
     };
 
 };
-
